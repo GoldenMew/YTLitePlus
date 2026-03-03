@@ -65,8 +65,8 @@ jobs:
           ref: ${{ github.event.inputs.commit_id || github.ref }}
           submodules: recursive
 
-      # - name: Install Dependencies
-        # run: brew install ldid dpkg make jq
+      - name: Install Dependencies
+        run: brew install ldid dpkg make jq
 
       - name: Download Theos
         uses: actions/checkout@v6.0.1
